@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: black;
+}
+.btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #efefef;
+	height: 20px;
+	width: 50px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+}
+button span {
+	position: absolute;
+	display: inline-block;
+	background: #999;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	cursor: pointer;
+	transform: translateX(-14px);
+}
+
+.eight {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.eight span {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100px;
+	width: 100px;
+	background: black;
+	top: -100px;
+	border-radius: 50%;
+	margin-top: 10px;
+	box-shadow: 0 0 50px #000, 0 0 100px #000;
+}
+
+.eight span::after {
+	content: "";
+	position: absolute;
+	height: 120px;
+	width: 180px;
+	background: white;
+	border-radius: 50%;
+	z-index: -5;
+}
+
+.lamp_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lamp {
+	position: absolute;
+	top: 50px;
+	width: 200px;
+}
+.light {
+	position: relative;
+	top: 390px;
+	right: 10px;
+	opacity: 0;
+}
+
+.active {
+	background: chartreuse;
+}
+
+.active span {
+	background: #fff;
+	margin-left: 50px;
+}
+
+.on {
+	opacity: 1;
+}
+.animate {
+	border: 10px solid cyan;
+}

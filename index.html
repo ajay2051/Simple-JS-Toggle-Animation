@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>8 Animation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="btn">
+			<button type="button" onclick="toggleBtn()" id="btn">
+				<span></span>
+			</button>
+		</div>
+		<div class="lamp_container">
+			<img src="lamp.png" class="lamp" />
+			<img src="light.png" class="light" id="light" />
+		</div>
+		<div class="eight">
+			<span id="eight"></span>
+			<span id="eight"></span>
+		</div>
+		<script src="script.js">
+			var btn = document.getElementById("btn");
+			var light = document.getElementById("light");
+			var eight = document.getElementById("eight");
+
+			function toggleBtn() {
+				btn.classList.toggle("active");
+				light.classList.toggle("on");
+				eight.classList.toggle("animate");
+			}
+		</script>
+	</body>
+</html>
